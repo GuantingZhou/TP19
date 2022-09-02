@@ -12,4 +12,7 @@ SiteGround Security
 WordPress Importer
 WP Go Maps (formerly WP Google Maps)
 WPForms Lite
+XYZ PHP Code
+WP-phpMyAdmin
+Image Hover
 ## Website password: tp19
