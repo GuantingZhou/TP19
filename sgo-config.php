@@ -34,6 +34,6 @@ $config = array (
   ),
   'output_dir' => '/home/customer/www/stopoholicau.com/public_html/wp-content/cache/sgo-cache/',
   'logged_in_cache' => 0,
-  'cache_secret_key' => 'a75e83b487297a92cf18dbbdf49b43a2',
+  'cache_secret_key' => '4fa72cf019848b0bb7af45cd30fd654a',
   'logged_in_cookie' => 'wordpress_logged_in_cf325b20c1fca40a5a4aab25ec3bbdc0',
 );
