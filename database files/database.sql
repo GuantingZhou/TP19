@@ -26,8 +26,8 @@ primary key (`type_id`)
 -- Filling up data for alcohol_types
 insert into alcohol_types (`description`,`unit`,`percentage_alcohol`,`standard_drink`) values ('Full/Mid-strength Beer','Pot/Middy',4.5,1.1);
 insert into alcohol_types (`description`,`unit`,`percentage_alcohol`,`standard_drink`) values ('Low-strength Beer','Pot/Middy',2.7,0.6);
-insert into alcohol_types (`description`,`unit`,`percentage_alcohol`,`standard_drink`) values ('Wine','Average glass',12.5,1.5);
-insert into alcohol_types (`description`,`unit`,`percentage_alcohol`,`standard_drink`) values ('Wine','Bottle',13.0,7.7);
+insert into alcohol_types (`description`,`unit`,`percentage_alcohol`,`standard_drink`) values ('Glass-Wine','Average glass',12.5,1.5);
+insert into alcohol_types (`description`,`unit`,`percentage_alcohol`,`standard_drink`) values ('Bottle-Wine','Bottle',13.0,7.7);
 
 insert into alcohol_types (`description`,`unit`,`percentage_alcohol`,`standard_drink`) values ('Both Full/Mid-strength Beer and Low-strength Beer with same proportion','Pot/Middy',3.6,0.9);
 insert into alcohol_types (`description`,`unit`,`percentage_alcohol`,`standard_drink`) values ('Both Full/Mid-strength Beer and Low-strength Beer with 1:2 proportion','Pot/Middy',3.3,0.8);
@@ -61,17 +61,38 @@ insert into item_option (`ITEM_NAME`, `ITEM_COST`) values ('355 nappies for litt
 insert into item_option (`ITEM_NAME`, `ITEM_COST`) values ('High speed internet for whole family', 140);
 insert into item_option (`ITEM_NAME`, `ITEM_COST`) values ('One fancy date night', 164);
 
+
 update `item_option`
 set cost_id = 1 where item_option.`ITEM_COST` < 25;
 
 update `item_option`
-set cost_id = 2 where item_option.`ITEM_COST` BETWEEN 25 and 50.99;
+set cost_id = 2 where item_option.`ITEM_COST`>= 25 and item_option.`ITEM_COST` < 50;
 
 update `item_option`
-set cost_id = 3 where item_option.`ITEM_COST` BETWEEN 51 and 100;
+set cost_id = 3 where item_option.`ITEM_COST` BETWEEN 50 and 100;
 
 update `item_option`
 set cost_id = 4 where item_option.`ITEM_COST` > 100;
+
+
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (1,'A cup of coffee', 5);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (1,'High quality breakfast cereal (500g)', 10);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (2,'Traditional thai massage (30 minutes)', 45);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (3,'Traditional thai massage (60 minutes)', 75);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (4,'Steam spa and full body massage (90 minutes)', 165);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (1,'Ticket for child Playcenter', 12);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (1,'A box of fast-food meal for one person', 18);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (1,'New skin-care product', 23);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (3,'Premium quality child-toy', 65);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (3,'Australian Open Tenis single-session ticket', 51);
+insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (3,'Australian Open Tenis multi-session ticket', 112);
+
+
+select distinct unit_price from alcohol_costs;
+
+
+
+
 
 
 
@@ -697,10 +718,11 @@ update `alcohol_costs`
 set cost_id = 1 where alcohol_costs.`unit_price` * alcohol_costs.`drink_amount` < 25;
 
 update `alcohol_costs`
-set cost_id = 2 where alcohol_costs.`unit_price` * alcohol_costs.`drink_amount` Between 25 and 50.99;
+set cost_id = 2 where alcohol_costs.`unit_price` * alcohol_costs.`drink_amount` >25 and 
+alcohol_costs.`unit_price` * alcohol_costs.`drink_amount` <50;
 
 update `alcohol_costs`
-set cost_id = 3 where alcohol_costs.`unit_price` * alcohol_costs.`drink_amount` Between 51 and 100;
+set cost_id = 3 where alcohol_costs.`unit_price` * alcohol_costs.`drink_amount` Between 50 and 100;
 
 update `alcohol_costs`
 set cost_id = 4 where alcohol_costs.`unit_price` * alcohol_costs.`drink_amount` > 100;
@@ -723,7 +745,8 @@ where alcohol_costs.drink_amount  = 30
 and alcohol_types.type_id = 2
 and alcohol_types.type_id = alcohol_costs.type_id;
 
-select costs.description
+-- What is my expenditure type(high, low, moderate etc) when I drink 30 drinks of low strength beer in a week
+select costs.description as 'Alcohol Expenditure Nature '
 From alcohol_types, alcohol_costs, costs
 where drink_amount  = 30
 and alcohol_types.type_id = 2
@@ -762,10 +785,70 @@ and costs.cost_id = item_option.cost_id ;
 
 -- What else a drinker could buy if he did not spend money for alcohol who drinks moderately (5 to 10 drinks in a week) of low strength beer 
 
-select distinct item_option.item_name as 'You could buy any of this for same expenditure of alcohols weekly'
+select distinct alcohol_types.description as 'Alcohol choice',
+item_option.item_name as 'You could buy instead of alcohols weekly'
 From alcohol_types, alcohol_costs, costs, item_option
-where alcohol_costs.drink_amount  between 5 and 10
-and alcohol_types.type_id = 2
+where alcohol_costs.drink_amount  between 1 and 5
+and alcohol_types.type_id = 1
 and alcohol_types.type_id = alcohol_costs.type_id
 and alcohol_costs.cost_id = costs.cost_id
 and costs.cost_id = item_option.cost_id ;
+
+-- What kind of drinks or combination of drinks I can drink if I am a binge drinker (who drinks at least 12 standard-drinks in a day, 84 drinks in a week)
+-- What will be the expenditure for each combination
+
+select  alcohol_types.description as `Your drink choice`, 
+min(alcohol_costs.`unit_price` * alcohol_costs.`drink_amount`) as `Your minimum weekly alcohol expense`
+From alcohol_types, alcohol_costs, costs, item_option
+where alcohol_costs.drink_amount >= 84
+and alcohol_types.type_id = alcohol_costs.type_id
+and alcohol_costs.cost_id = costs.cost_id
+and costs.cost_id = item_option.cost_id 
+group by alcohol_types.description;
+
+
+SHOW CREATE TABLE costs;
+SHOW CREATE TABLE item_option;
+
+select * from alcoholic.item_option;
+
+select a.description as 'Your alcohol choice', a.percentage_alcohol as 'Alcohol % in each drink', 
+ac.unit_price as 'Price of alcohol', ac.drink_amount as 'Weekly drink quantity', 
+ceil(unit_price*ac.drink_amount) as 'Total weekly expenditure on alcohol($)', 
+i.item_name as 'What you could buy?', i.item_cost as 'Cost(AUD)'
+From alcohol_types a, alcohol_costs ac, costs c, item_option i
+where a.type_id = ac.type_id
+and ac.cost_id = c.cost_id
+and c.cost_id = i.cost_id
+and  ac.unit_price*ac.drink_amount >= i.item_cost
+order by ac.unit_price*ac.drink_amount;
+
+select distinct a.description as 'Your alcohol choice', a.percentage_alcohol as 'Alcohol % in each drink', 
+ac.unit_price as 'Price of alcohol(AUD)'
+From alcohol_types a, alcohol_costs ac
+where a.type_id = ac.type_id;
+
+select  i.item_name as 'What items you could buy?', i.item_cost as 'Item Cost (AUD)'
+From item_option i;
+
+select distinct alcohol_types.description as `Alcohol_choice`, 
+item_option.item_name as `Your_buying_option`, item_option.item_cost as Cost
+From alcohol_types, alcohol_costs, costs, item_option
+where alcohol_costs.drink_amount > 25
+and alcohol_types.type_id =1
+and item_option.item_cost not in (
+select item_option.item_cost 
+From alcohol_types, alcohol_costs, costs, item_option
+where alcohol_types.type_id =1
+and alcohol_costs.drink_amount between 11 and 25
+and  alcohol_costs.unit_price*alcohol_costs.drink_amount >= item_option.item_cost
+and alcohol_types.type_id = alcohol_costs.type_id
+and alcohol_costs.cost_id = costs.cost_id
+and costs.cost_id = item_option.cost_id)
+and  alcohol_costs.unit_price*alcohol_costs.drink_amount >= item_option.item_cost
+and alcohol_types.type_id = alcohol_costs.type_id
+and alcohol_costs.cost_id = costs.cost_id
+and costs.cost_id = item_option.cost_id 
+order by alcohol_costs.unit_price*alcohol_costs.drink_amount;
+
+
