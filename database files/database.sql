@@ -851,4 +851,108 @@ and alcohol_costs.cost_id = costs.cost_id
 and costs.cost_id = item_option.cost_id 
 order by alcohol_costs.unit_price*alcohol_costs.drink_amount;
 
+----------------------------------------------------------------
+----------------------------------------------------------------
+-- -----------------------ITERATION-2---------------------------
 
+-- creating activity_type table
+drop table if exists `activity_type`;
+-- creating table using phpMyAdmin GUI mode by importing csv file from working directory 
+-- Adding primary key constraint
+alter table `activity_type` ADD  	PRIMARY KEY ( `activity_type_id` ) ;
+
+drop table if exists `activity`;
+-- creating table using phpMyAdmin GUI mode by importing csv file from working directory 
+-- Adding primary key constraint
+alter table `activity` ADD  	PRIMARY KEY ( `activity_id` ) ;
+-- Adding foreign key constraint
+alter table `activity` ADD  FOREIGN KEY ( `activity_type_id` ) REFERENCES activity_type ( `activity_type_id` );
+
+-- Creating calorie table
+drop table if exists `calorie`;
+
+create table `calorie` (
+`calorie_id` int not null auto_increment,
+`calorie_description` varchar(50) not null,
+`calorie_range` varchar(100),
+primary key (`calorie_id`)
+);
+
+insert into calorie (`calorie_description`,`calorie_range`) values ('low','below 300');
+insert into calorie (`calorie_description`,`calorie_range`) values ('moderate','301 to 600');
+insert into calorie (`calorie_description`,`calorie_range`) values ('high','601 to 900');
+insert into calorie (`calorie_description`,`calorie_range`) values ('very high', '900 to 1200');
+insert into calorie (`calorie_description`,`calorie_range`) values ('Extreme', '1200 +');
+
+-- Adding calori_id column in activity table
+ALTER TABLE activity
+ADD COLUMN calorie_id int AFTER activity_calorie;
+
+-- Populating calorie_id column
+
+update activity set calorie_id = 1 where activity_calorie <=300; 
+update activity set calorie_id = 2 where activity_calorie >300 and activity_calorie <=600; 
+update activity set calorie_id = 3 where activity_calorie >600 and activity_calorie <=900; 
+update activity set calorie_id = 4 where activity_calorie >900 and activity_calorie <=1200; 
+update activity set calorie_id = 5 where activity_calorie >1200; 
+
+-- adding foreign constraint in activity table
+alter table activity ADD FOREIGN KEY ( `calorie_id` ) REFERENCES calorie ( `calorie_id` ) on delete cascade;
+
+-- Adding more columns (drink_calorie, calorie_id) in alcohol_costs table
+
+ALTER TABLE alcohol_costs
+ADD COLUMN drink_calorie float(6,2) AFTER unit_price;
+-- populating drink_calorie column
+update alcohol_costs set drink_calorie = 202 where type_id = 1; 
+update alcohol_costs set drink_calorie = 83 where type_id = 2;
+update alcohol_costs set drink_calorie = 130 where type_id = 3;
+update alcohol_costs set drink_calorie = 650 where type_id = 4;
+
+
+ALTER TABLE alcohol_costs
+ADD COLUMN calorie_id int AFTER cost_id;
+-- populating calorie_id column
+update alcohol_costs set calorie_id = 1 where drink_amount*drink_calorie <=300; 
+update alcohol_costs set calorie_id = 2 where drink_amount*drink_calorie >300 and drink_amount*drink_calorie <=600; 
+update alcohol_costs set calorie_id = 3 where drink_amount*drink_calorie >600 and drink_amount*drink_calorie <=900; 
+update alcohol_costs set calorie_id = 4 where drink_amount*drink_calorie >900 and drink_amount*drink_calorie <=1200; 
+update alcohol_costs set calorie_id = 5 where drink_amount*drink_calorie >1200; 
+
+-- converting calorie_id to a foreign key
+alter table alcohol_costs ADD FOREIGN KEY ( `calorie_id` ) REFERENCES calorie ( `calorie_id` ) on delete cascade;
+
+
+-- Database querry
+
+-- Example: find out activity suggestions for drinkers who drink low strength alcohol and drink 2 times weekly
+
+select ac.drink_amount as 'Drink Quantity',
+ac.drink_calorie * ac.drink_amount as 'Consumed Calorie',  
+t.activity_type as 'Activity Type', a.activity as 'Suggested Activity',
+min(a.activity_calorie) as 'Calorie Burned by Activities', 
+CEILING(((ac.drink_amount * ac.drink_calorie)/a.activity_calorie )*60) as 'Activity Time (Minutes)'
+from activity a, activity_type t, calorie c, alcohol_costs ac
+where ac.calorie_id = c.calorie_id and c.calorie_id = a.calorie_id and a.activity_type_id = t.activity_type_id
+and ac.drink_amount=2
+and ac.type_id =2
+and a.activity_calorie> ac.drink_amount * ac.drink_calorie
+group by ac.drink_amount,activity_type 
+union
+select ac.drink_amount as 'Drink Quantity',
+ac.drink_calorie * ac.drink_amount as 'Consumed Calorie',  
+t.activity_type as 'Activity Type', a.activity as 'Suggested Activity',
+MAX(a.activity_calorie) as 'Calorie Burned by Activities', 
+CEILING(((ac.drink_amount * ac.drink_calorie)/a.activity_calorie )*60) as 'Activity Time (Minutes)'
+from activity a, activity_type t, calorie c, alcohol_costs ac
+where ac.calorie_id = c.calorie_id and c.calorie_id = a.calorie_id and a.activity_type_id = t.activity_type_id
+and ac.drink_amount=2
+and ac.type_id =2
+and a.activity_calorie < ac.drink_amount * ac.drink_calorie
+group by ac.drink_amount,activity_type ;
+
+-- Show the all important columns in a single table
+select ac.type_id, ac.calorie_id, ac.drink_amount, ac.drink_calorie, a.activity_id, a.activity, a.activity_calorie, t.activity_type_id
+from activity a, activity_type t, calorie c, alcohol_costs ac
+where ac.calorie_id = c.calorie_id and c.calorie_id = a.calorie_id and a.activity_type_id = t.activity_type_id
+order by ac.drink_amount, type_id, activity_id;
