@@ -1,0 +1,554 @@
+activity_id,activity,activity_calorie,activity_type_id
+0,Walking under 2.0 mph very slow ; one day weekly,152.0,3
+1,Walking 2.0 mph slow ; one day weekly,190.25,3
+2,Walking 2.5 mph ; one day weekly,228.0,3
+3,Walking 3.0 mph moderate ; one day weekly,251.0,3
+4,Walking 3.5 mph brisk pace ; one day weekly,289.0,3
+5,Walking 3.5 mph uphill ; one day weekly,456.0,3
+6,Walking 4.0 mph very brisk ; one day weekly,380.25,3
+7,Walking 4.5 mph ; one day weekly,479.0,3
+8,Walking 5.0 mph ; one day weekly,608.5,3
+9,Swimming laps freestyle fast ; one day weekly,760.5,1
+10,Swimming laps freestyle slow ; one day weekly,532.25,1
+11,Swimming backstroke ; one day weekly,532.25,1
+12,Swimming breaststroke ; one day weekly,760.5,1
+13,Swimming butterfly ; one day weekly,836.5,1
+14,Swimming leisurely not laps ; one day weekly,456.0,1
+15,Swimming sidestroke ; one day weekly,608.5,1
+16,Swimming synchronized ; one day weekly,608.5,1
+17,Swimming treading water fast vigorous ; one day weekly,760.5,1
+18,Swimming treading water moderate ; one day weekly,304.0,1
+19,Water aerobics water calisthenics ; one day weekly,304.0,1
+20,Water polo ; one day weekly,760.5,1
+21,Water volleyball ; one day weekly,228.0,1
+22,Water jogging ; one day weekly,608.5,1
+23,Diving springboard or platform ; one day weekly,228.0,1
+24,Cycling mountain bike bmx ; one day weekly,646.5,0
+25,Cycling <10 mph leisure bicycling ; one day weekly,304.0,0
+26,Cycling >20 mph racing ; one day weekly,1216.75,0
+27,Cycling 10-11.9 mph light ; one day weekly,456.0,0
+28,Cycling 12-13.9 mph moderate ; one day weekly,608.5,0
+29,Cycling 14-15.9 mph vigorous ; one day weekly,760.5,0
+30,Cycling 16-19 mph very fast racing ; one day weekly,912.5,0
+31,Unicycling ; one day weekly,380.25,0
+32,Stationary cycling very light ; one day weekly,228.0,0
+33,Stationary cycling light ; one day weekly,418.25,0
+34,Stationary cycling moderate ; one day weekly,532.25,0
+35,Stationary cycling vigorous ; one day weekly,798.5,0
+36,Stationary cycling very vigorous ; one day weekly,950.75,0
+37,Aerobics low impact ; one day weekly,380.25,2
+38,Aerobics high impact ; one day weekly,532.25,2
+39,Aerobics step aerobics ; one day weekly,646.5,2
+40,Aerobics general ; one day weekly,494.25,2
+41,Jazzercise ; one day weekly,456.0,2
+42,Stretching hatha yoga ; one day weekly,304.0,2
+43,Mild stretching ; one day weekly,190.25,2
+44,Instructing aerobic class ; one day weekly,456.0,2
+45,Water aerobics ; one day weekly,304.0,2
+46,Ballet twist jazz tap ; one day weekly,342.5,2
+47,Ballroom dancing slow ; one day weekly,228.0,2
+48,Ballroom dancing fast ; one day weekly,418.25,2
+49,Teach aerobic classes (& participate) ; one day weekly,494.25,2
+50,Orienteering ; one day weekly,684.25,4
+51,Rock climbing ascending rock ; one day weekly,836.5,4
+52,Rock climbing rappelling ; one day weekly,608.5,4
+53,Backpacking Hiking with pack ; one day weekly,532.25,4
+54,Carrying infant level ground ; one day weekly,266.25,4
+55,Carrying infant upstairs ; one day weekly,380.25,4
+56,Carrying 16 to 24 lbs upstairs ; one day weekly,456.0,4
+57,Carrying 25 to 49 lbs upstairs ; one day weekly,608.5,4
+58,Standing playing with children light ; one day weekly,213.0,4
+59,Walk/run playing with children moderate ; one day weekly,304.0,4
+60,Walk/run playing with children vigorous ; one day weekly,380.25,4
+61,Carrying small children ; one day weekly,228.0,4
+62,Loading unloading car ; one day weekly,228.0,4
+63,Climbing hills carrying up to 9 lbs ; one day weekly,532.25,4
+64,Climbing hills carrying 10 to 20 lb ; one day weekly,570.5,4
+65,Climbing hills carrying 21 to 42 lb ; one day weekly,608.5,4
+66,Climbing hills carrying over 42 lb ; one day weekly,684.25,4
+67,Walking downstairs ; one day weekly,228.0,4
+68,Hiking cross country ; one day weekly,456.0,4
+69,Bird watching ; one day weekly,190.25,4
+70,Marching rapidly military ; one day weekly,494.25,4
+71,Pushing stroller or walking with children ; one day weekly,190.25,4
+72,Pushing a wheelchair ; one day weekly,304.0,4
+73,Race walking ; one day weekly,494.25,4
+74,Rock climbing mountain climbing ; one day weekly,608.5,4
+75,Walking using crutches ; one day weekly,380.25,4
+76,Walking the dog ; one day weekly,228.0,4
+77,Walk / run playing with animals ; one day weekly,304.0,4
+78,Walking pushing a wheelchair ; one day weekly,304.0,4
+79,Walking under 2.0 mph very slow ; two days weekly,304.0,3
+80,Walking 2.0 mph slow ; two days weekly,380.5,3
+81,Walking 2.5 mph ; two days weekly,456.0,3
+82,Walking 3.0 mph moderate ; two days weekly,502.0,3
+83,Walking 3.5 mph brisk pace ; two days weekly,578.0,3
+84,Walking 3.5 mph uphill ; two days weekly,912.0,3
+85,Walking 4.0 mph very brisk ; two days weekly,760.5,3
+86,Walking 4.5 mph ; two days weekly,958.0,3
+87,Walking 5.0 mph ; two days weekly,1217.0,3
+88,Swimming laps freestyle fast ; two days weekly,1521.0,1
+89,Swimming laps freestyle slow ; two days weekly,1064.5,1
+90,Swimming backstroke ; two days weekly,1064.5,1
+91,Swimming breaststroke ; two days weekly,1521.0,1
+92,Swimming butterfly ; two days weekly,1673.0,1
+93,Swimming leisurely not laps ; two days weekly,912.0,1
+94,Swimming sidestroke ; two days weekly,1217.0,1
+95,Swimming synchronized ; two days weekly,1217.0,1
+96,Swimming treading water fast vigorous ; two days weekly,1521.0,1
+97,Swimming treading water moderate ; two days weekly,608.0,1
+98,Water aerobics water calisthenics ; two days weekly,608.0,1
+99,Water polo ; two days weekly,1521.0,1
+100,Water volleyball ; two days weekly,456.0,1
+101,Water jogging ; two days weekly,1217.0,1
+102,Diving springboard or platform ; two days weekly,456.0,1
+103,Cycling mountain bike bmx ; two days weekly,1293.0,0
+104,Cycling <10 mph leisure bicycling ; two days weekly,608.0,0
+105,Cycling >20 mph racing ; two days weekly,2433.5,0
+106,Cycling 10-11.9 mph light ; two days weekly,912.0,0
+107,Cycling 12-13.9 mph moderate ; two days weekly,1217.0,0
+108,Cycling 14-15.9 mph vigorous ; two days weekly,1521.0,0
+109,Cycling 16-19 mph very fast racing ; two days weekly,1825.0,0
+110,Unicycling ; two days weekly,760.5,0
+111,Stationary cycling very light ; two days weekly,456.0,0
+112,Stationary cycling light ; two days weekly,836.5,0
+113,Stationary cycling moderate ; two days weekly,1064.5,0
+114,Stationary cycling vigorous ; two days weekly,1597.0,0
+115,Stationary cycling very vigorous ; two days weekly,1901.5,0
+116,Aerobics low impact ; two days weekly,760.5,2
+117,Aerobics high impact ; two days weekly,1064.5,2
+118,Aerobics step aerobics ; two days weekly,1293.0,2
+119,Aerobics general ; two days weekly,988.5,2
+120,Jazzercise ; two days weekly,912.0,2
+121,Stretching hatha yoga ; two days weekly,608.0,2
+122,Mild stretching ; two days weekly,380.5,2
+123,Instructing aerobic class ; two days weekly,912.0,2
+124,Water aerobics ; two days weekly,608.0,2
+125,Ballet twist jazz tap ; two days weekly,685.0,2
+126,Ballroom dancing slow ; two days weekly,456.0,2
+127,Ballroom dancing fast ; two days weekly,836.5,2
+128,Teach aerobic classes (& participate) ; two days weekly,988.5,2
+129,Orienteering ; two days weekly,1368.5,4
+130,Rock climbing ascending rock ; two days weekly,1673.0,4
+131,Rock climbing rappelling ; two days weekly,1217.0,4
+132,Backpacking Hiking with pack ; two days weekly,1064.5,4
+133,Carrying infant level ground ; two days weekly,532.5,4
+134,Carrying infant upstairs ; two days weekly,760.5,4
+135,Carrying 16 to 24 lbs upstairs ; two days weekly,912.0,4
+136,Carrying 25 to 49 lbs upstairs ; two days weekly,1217.0,4
+137,Standing playing with children light ; two days weekly,426.0,4
+138,Walk/run playing with children moderate ; two days weekly,608.0,4
+139,Walk/run playing with children vigorous ; two days weekly,760.5,4
+140,Carrying small children ; two days weekly,456.0,4
+141,Loading unloading car ; two days weekly,456.0,4
+142,Climbing hills carrying up to 9 lbs ; two days weekly,1064.5,4
+143,Climbing hills carrying 10 to 20 lb ; two days weekly,1141.0,4
+144,Climbing hills carrying 21 to 42 lb ; two days weekly,1217.0,4
+145,Climbing hills carrying over 42 lb ; two days weekly,1368.5,4
+146,Walking downstairs ; two days weekly,456.0,4
+147,Hiking cross country ; two days weekly,912.0,4
+148,Bird watching ; two days weekly,380.5,4
+149,Marching rapidly military ; two days weekly,988.5,4
+150,Pushing stroller or walking with children ; two days weekly,380.5,4
+151,Pushing a wheelchair ; two days weekly,608.0,4
+152,Race walking ; two days weekly,988.5,4
+153,Rock climbing mountain climbing ; two days weekly,1217.0,4
+154,Walking using crutches ; two days weekly,760.5,4
+155,Walking the dog ; two days weekly,456.0,4
+156,Walk / run playing with animals ; two days weekly,608.0,4
+157,Walking pushing a wheelchair ; two days weekly,608.0,4
+158,Walking under 2.0 mph very slow ; three days weekly,456.0,3
+159,Walking 2.0 mph slow ; three days weekly,570.75,3
+160,Walking 2.5 mph ; three days weekly,684.0,3
+161,Walking 3.0 mph moderate ; three days weekly,753.0,3
+162,Walking 3.5 mph brisk pace ; three days weekly,867.0,3
+163,Walking 3.5 mph uphill ; three days weekly,1368.0,3
+164,Walking 4.0 mph very brisk ; three days weekly,1140.75,3
+165,Walking 4.5 mph ; three days weekly,1437.0,3
+166,Walking 5.0 mph ; three days weekly,1825.5,3
+167,Swimming laps freestyle fast ; three days weekly,2281.5,1
+168,Swimming laps freestyle slow ; three days weekly,1596.75,1
+169,Swimming backstroke ; three days weekly,1596.75,1
+170,Swimming breaststroke ; three days weekly,2281.5,1
+171,Swimming butterfly ; three days weekly,2509.5,1
+172,Swimming leisurely not laps ; three days weekly,1368.0,1
+173,Swimming sidestroke ; three days weekly,1825.5,1
+174,Swimming synchronized ; three days weekly,1825.5,1
+175,Swimming treading water fast vigorous ; three days weekly,2281.5,1
+176,Swimming treading water moderate ; three days weekly,912.0,1
+177,Water aerobics water calisthenics ; three days weekly,912.0,1
+178,Water polo ; three days weekly,2281.5,1
+179,Water volleyball ; three days weekly,684.0,1
+180,Water jogging ; three days weekly,1825.5,1
+181,Diving springboard or platform ; three days weekly,684.0,1
+182,Cycling mountain bike bmx ; three days weekly,1939.5,0
+183,Cycling <10 mph leisure bicycling ; three days weekly,912.0,0
+184,Cycling >20 mph racing ; three days weekly,3650.25,0
+185,Cycling 10-11.9 mph light ; three days weekly,1368.0,0
+186,Cycling 12-13.9 mph moderate ; three days weekly,1825.5,0
+187,Cycling 14-15.9 mph vigorous ; three days weekly,2281.5,0
+188,Cycling 16-19 mph very fast racing ; three days weekly,2737.5,0
+189,Unicycling ; three days weekly,1140.75,0
+190,Stationary cycling very light ; three days weekly,684.0,0
+191,Stationary cycling light ; three days weekly,1254.75,0
+192,Stationary cycling moderate ; three days weekly,1596.75,0
+193,Stationary cycling vigorous ; three days weekly,2395.5,0
+194,Stationary cycling very vigorous ; three days weekly,2852.25,0
+195,Aerobics low impact ; three days weekly,1140.75,2
+196,Aerobics high impact ; three days weekly,1596.75,2
+197,Aerobics step aerobics ; three days weekly,1939.5,2
+198,Aerobics general ; three days weekly,1482.75,2
+199,Jazzercise ; three days weekly,1368.0,2
+200,Stretching hatha yoga ; three days weekly,912.0,2
+201,Mild stretching ; three days weekly,570.75,2
+202,Instructing aerobic class ; three days weekly,1368.0,2
+203,Water aerobics ; three days weekly,912.0,2
+204,Ballet twist jazz tap ; three days weekly,1027.5,2
+205,Ballroom dancing slow ; three days weekly,684.0,2
+206,Ballroom dancing fast ; three days weekly,1254.75,2
+207,Teach aerobic classes (& participate) ; three days weekly,1482.75,2
+208,Orienteering ; three days weekly,2052.75,4
+209,Rock climbing ascending rock ; three days weekly,2509.5,4
+210,Rock climbing rappelling ; three days weekly,1825.5,4
+211,Backpacking Hiking with pack ; three days weekly,1596.75,4
+212,Carrying infant level ground ; three days weekly,798.75,4
+213,Carrying infant upstairs ; three days weekly,1140.75,4
+214,Carrying 16 to 24 lbs upstairs ; three days weekly,1368.0,4
+215,Carrying 25 to 49 lbs upstairs ; three days weekly,1825.5,4
+216,Standing playing with children light ; three days weekly,639.0,4
+217,Walk/run playing with children moderate ; three days weekly,912.0,4
+218,Walk/run playing with children vigorous ; three days weekly,1140.75,4
+219,Carrying small children ; three days weekly,684.0,4
+220,Loading unloading car ; three days weekly,684.0,4
+221,Climbing hills carrying up to 9 lbs ; three days weekly,1596.75,4
+222,Climbing hills carrying 10 to 20 lb ; three days weekly,1711.5,4
+223,Climbing hills carrying 21 to 42 lb ; three days weekly,1825.5,4
+224,Climbing hills carrying over 42 lb ; three days weekly,2052.75,4
+225,Walking downstairs ; three days weekly,684.0,4
+226,Hiking cross country ; three days weekly,1368.0,4
+227,Bird watching ; three days weekly,570.75,4
+228,Marching rapidly military ; three days weekly,1482.75,4
+229,Pushing stroller or walking with children ; three days weekly,570.75,4
+230,Pushing a wheelchair ; three days weekly,912.0,4
+231,Race walking ; three days weekly,1482.75,4
+232,Rock climbing mountain climbing ; three days weekly,1825.5,4
+233,Walking using crutches ; three days weekly,1140.75,4
+234,Walking the dog ; three days weekly,684.0,4
+235,Walk / run playing with animals ; three days weekly,912.0,4
+236,Walking pushing a wheelchair ; three days weekly,912.0,4
+237,Walking under 2.0 mph very slow ; four days weekly,608.0,3
+238,Walking 2.0 mph slow ; four days weekly,761.0,3
+239,Walking 2.5 mph ; four days weekly,912.0,3
+240,Walking 3.0 mph moderate ; four days weekly,1004.0,3
+241,Walking 3.5 mph brisk pace ; four days weekly,1156.0,3
+242,Walking 3.5 mph uphill ; four days weekly,1824.0,3
+243,Walking 4.0 mph very brisk ; four days weekly,1521.0,3
+244,Walking 4.5 mph ; four days weekly,1916.0,3
+245,Walking 5.0 mph ; four days weekly,2434.0,3
+246,Swimming laps freestyle fast ; four days weekly,3042.0,1
+247,Swimming laps freestyle slow ; four days weekly,2129.0,1
+248,Swimming backstroke ; four days weekly,2129.0,1
+249,Swimming breaststroke ; four days weekly,3042.0,1
+250,Swimming butterfly ; four days weekly,3346.0,1
+251,Swimming leisurely not laps ; four days weekly,1824.0,1
+252,Swimming sidestroke ; four days weekly,2434.0,1
+253,Swimming synchronized ; four days weekly,2434.0,1
+254,Swimming treading water fast vigorous ; four days weekly,3042.0,1
+255,Swimming treading water moderate ; four days weekly,1216.0,1
+256,Water aerobics water calisthenics ; four days weekly,1216.0,1
+257,Water polo ; four days weekly,3042.0,1
+258,Water volleyball ; four days weekly,912.0,1
+259,Water jogging ; four days weekly,2434.0,1
+260,Diving springboard or platform ; four days weekly,912.0,1
+261,Cycling mountain bike bmx ; four days weekly,2586.0,0
+262,Cycling <10 mph leisure bicycling ; four days weekly,1216.0,0
+263,Cycling >20 mph racing ; four days weekly,4867.0,0
+264,Cycling 10-11.9 mph light ; four days weekly,1824.0,0
+265,Cycling 12-13.9 mph moderate ; four days weekly,2434.0,0
+266,Cycling 14-15.9 mph vigorous ; four days weekly,3042.0,0
+267,Cycling 16-19 mph very fast racing ; four days weekly,3650.0,0
+268,Unicycling ; four days weekly,1521.0,0
+269,Stationary cycling very light ; four days weekly,912.0,0
+270,Stationary cycling light ; four days weekly,1673.0,0
+271,Stationary cycling moderate ; four days weekly,2129.0,0
+272,Stationary cycling vigorous ; four days weekly,3194.0,0
+273,Stationary cycling very vigorous ; four days weekly,3803.0,0
+274,Aerobics low impact ; four days weekly,1521.0,2
+275,Aerobics high impact ; four days weekly,2129.0,2
+276,Aerobics step aerobics ; four days weekly,2586.0,2
+277,Aerobics general ; four days weekly,1977.0,2
+278,Jazzercise ; four days weekly,1824.0,2
+279,Stretching hatha yoga ; four days weekly,1216.0,2
+280,Mild stretching ; four days weekly,761.0,2
+281,Instructing aerobic class ; four days weekly,1824.0,2
+282,Water aerobics ; four days weekly,1216.0,2
+283,Ballet twist jazz tap ; four days weekly,1370.0,2
+284,Ballroom dancing slow ; four days weekly,912.0,2
+285,Ballroom dancing fast ; four days weekly,1673.0,2
+286,Teach aerobic classes (& participate) ; four days weekly,1977.0,2
+287,Orienteering ; four days weekly,2737.0,4
+288,Rock climbing ascending rock ; four days weekly,3346.0,4
+289,Rock climbing rappelling ; four days weekly,2434.0,4
+290,Backpacking Hiking with pack ; four days weekly,2129.0,4
+291,Carrying infant level ground ; four days weekly,1065.0,4
+292,Carrying infant upstairs ; four days weekly,1521.0,4
+293,Carrying 16 to 24 lbs upstairs ; four days weekly,1824.0,4
+294,Carrying 25 to 49 lbs upstairs ; four days weekly,2434.0,4
+295,Standing playing with children light ; four days weekly,852.0,4
+296,Walk/run playing with children moderate ; four days weekly,1216.0,4
+297,Walk/run playing with children vigorous ; four days weekly,1521.0,4
+298,Carrying small children ; four days weekly,912.0,4
+299,Loading unloading car ; four days weekly,912.0,4
+300,Climbing hills carrying up to 9 lbs ; four days weekly,2129.0,4
+301,Climbing hills carrying 10 to 20 lb ; four days weekly,2282.0,4
+302,Climbing hills carrying 21 to 42 lb ; four days weekly,2434.0,4
+303,Climbing hills carrying over 42 lb ; four days weekly,2737.0,4
+304,Walking downstairs ; four days weekly,912.0,4
+305,Hiking cross country ; four days weekly,1824.0,4
+306,Bird watching ; four days weekly,761.0,4
+307,Marching rapidly military ; four days weekly,1977.0,4
+308,Pushing stroller or walking with children ; four days weekly,761.0,4
+309,Pushing a wheelchair ; four days weekly,1216.0,4
+310,Race walking ; four days weekly,1977.0,4
+311,Rock climbing mountain climbing ; four days weekly,2434.0,4
+312,Walking using crutches ; four days weekly,1521.0,4
+313,Walking the dog ; four days weekly,912.0,4
+314,Walk / run playing with animals ; four days weekly,1216.0,4
+315,Walking pushing a wheelchair ; four days weekly,1216.0,4
+316,Walking under 2.0 mph very slow ; five days weekly,760.0,3
+317,Walking 2.0 mph slow ; five days weekly,951.25,3
+318,Walking 2.5 mph ; five days weekly,1140.0,3
+319,Walking 3.0 mph moderate ; five days weekly,1255.0,3
+320,Walking 3.5 mph brisk pace ; five days weekly,1445.0,3
+321,Walking 3.5 mph uphill ; five days weekly,2280.0,3
+322,Walking 4.0 mph very brisk ; five days weekly,1901.25,3
+323,Walking 4.5 mph ; five days weekly,2395.0,3
+324,Walking 5.0 mph ; five days weekly,3042.5,3
+325,Swimming laps freestyle fast ; five days weekly,3802.5,1
+326,Swimming laps freestyle slow ; five days weekly,2661.25,1
+327,Swimming backstroke ; five days weekly,2661.25,1
+328,Swimming breaststroke ; five days weekly,3802.5,1
+329,Swimming butterfly ; five days weekly,4182.5,1
+330,Swimming leisurely not laps ; five days weekly,2280.0,1
+331,Swimming sidestroke ; five days weekly,3042.5,1
+332,Swimming synchronized ; five days weekly,3042.5,1
+333,Swimming treading water fast vigorous ; five days weekly,3802.5,1
+334,Swimming treading water moderate ; five days weekly,1520.0,1
+335,Water aerobics water calisthenics ; five days weekly,1520.0,1
+336,Water polo ; five days weekly,3802.5,1
+337,Water volleyball ; five days weekly,1140.0,1
+338,Water jogging ; five days weekly,3042.5,1
+339,Diving springboard or platform ; five days weekly,1140.0,1
+340,Cycling mountain bike bmx ; five days weekly,3232.5,0
+341,Cycling <10 mph leisure bicycling ; five days weekly,1520.0,0
+342,Cycling >20 mph racing ; five days weekly,6083.75,0
+343,Cycling 10-11.9 mph light ; five days weekly,2280.0,0
+344,Cycling 12-13.9 mph moderate ; five days weekly,3042.5,0
+345,Cycling 14-15.9 mph vigorous ; five days weekly,3802.5,0
+346,Cycling 16-19 mph very fast racing ; five days weekly,4562.5,0
+347,Unicycling ; five days weekly,1901.25,0
+348,Stationary cycling very light ; five days weekly,1140.0,0
+349,Stationary cycling light ; five days weekly,2091.25,0
+350,Stationary cycling moderate ; five days weekly,2661.25,0
+351,Stationary cycling vigorous ; five days weekly,3992.5,0
+352,Stationary cycling very vigorous ; five days weekly,4753.75,0
+353,Aerobics low impact ; five days weekly,1901.25,2
+354,Aerobics high impact ; five days weekly,2661.25,2
+355,Aerobics step aerobics ; five days weekly,3232.5,2
+356,Aerobics general ; five days weekly,2471.25,2
+357,Jazzercise ; five days weekly,2280.0,2
+358,Stretching hatha yoga ; five days weekly,1520.0,2
+359,Mild stretching ; five days weekly,951.25,2
+360,Instructing aerobic class ; five days weekly,2280.0,2
+361,Water aerobics ; five days weekly,1520.0,2
+362,Ballet twist jazz tap ; five days weekly,1712.5,2
+363,Ballroom dancing slow ; five days weekly,1140.0,2
+364,Ballroom dancing fast ; five days weekly,2091.25,2
+365,Teach aerobic classes (& participate) ; five days weekly,2471.25,2
+366,Orienteering ; five days weekly,3421.25,4
+367,Rock climbing ascending rock ; five days weekly,4182.5,4
+368,Rock climbing rappelling ; five days weekly,3042.5,4
+369,Backpacking Hiking with pack ; five days weekly,2661.25,4
+370,Carrying infant level ground ; five days weekly,1331.25,4
+371,Carrying infant upstairs ; five days weekly,1901.25,4
+372,Carrying 16 to 24 lbs upstairs ; five days weekly,2280.0,4
+373,Carrying 25 to 49 lbs upstairs ; five days weekly,3042.5,4
+374,Standing playing with children light ; five days weekly,1065.0,4
+375,Walk/run playing with children moderate ; five days weekly,1520.0,4
+376,Walk/run playing with children vigorous ; five days weekly,1901.25,4
+377,Carrying small children ; five days weekly,1140.0,4
+378,Loading unloading car ; five days weekly,1140.0,4
+379,Climbing hills carrying up to 9 lbs ; five days weekly,2661.25,4
+380,Climbing hills carrying 10 to 20 lb ; five days weekly,2852.5,4
+381,Climbing hills carrying 21 to 42 lb ; five days weekly,3042.5,4
+382,Climbing hills carrying over 42 lb ; five days weekly,3421.25,4
+383,Walking downstairs ; five days weekly,1140.0,4
+384,Hiking cross country ; five days weekly,2280.0,4
+385,Bird watching ; five days weekly,951.25,4
+386,Marching rapidly military ; five days weekly,2471.25,4
+387,Pushing stroller or walking with children ; five days weekly,951.25,4
+388,Pushing a wheelchair ; five days weekly,1520.0,4
+389,Race walking ; five days weekly,2471.25,4
+390,Rock climbing mountain climbing ; five days weekly,3042.5,4
+391,Walking using crutches ; five days weekly,1901.25,4
+392,Walking the dog ; five days weekly,1140.0,4
+393,Walk / run playing with animals ; five days weekly,1520.0,4
+394,Walking pushing a wheelchair ; five days weekly,1520.0,4
+395,Walking under 2.0 mph very slow ; six days weekly,912.0,3
+396,Walking 2.0 mph slow ; six days weekly,1141.5,3
+397,Walking 2.5 mph ; six days weekly,1368.0,3
+398,Walking 3.0 mph moderate ; six days weekly,1506.0,3
+399,Walking 3.5 mph brisk pace ; six days weekly,1734.0,3
+400,Walking 3.5 mph uphill ; six days weekly,2736.0,3
+401,Walking 4.0 mph very brisk ; six days weekly,2281.5,3
+402,Walking 4.5 mph ; six days weekly,2874.0,3
+403,Walking 5.0 mph ; six days weekly,3651.0,3
+404,Swimming laps freestyle fast ; six days weekly,4563.0,1
+405,Swimming laps freestyle slow ; six days weekly,3193.5,1
+406,Swimming backstroke ; six days weekly,3193.5,1
+407,Swimming breaststroke ; six days weekly,4563.0,1
+408,Swimming butterfly ; six days weekly,5019.0,1
+409,Swimming leisurely not laps ; six days weekly,2736.0,1
+410,Swimming sidestroke ; six days weekly,3651.0,1
+411,Swimming synchronized ; six days weekly,3651.0,1
+412,Swimming treading water fast vigorous ; six days weekly,4563.0,1
+413,Swimming treading water moderate ; six days weekly,1824.0,1
+414,Water aerobics water calisthenics ; six days weekly,1824.0,1
+415,Water polo ; six days weekly,4563.0,1
+416,Water volleyball ; six days weekly,1368.0,1
+417,Water jogging ; six days weekly,3651.0,1
+418,Diving springboard or platform ; six days weekly,1368.0,1
+419,Cycling mountain bike bmx ; six days weekly,3879.0,0
+420,Cycling <10 mph leisure bicycling ; six days weekly,1824.0,0
+421,Cycling >20 mph racing ; six days weekly,7300.5,0
+422,Cycling 10-11.9 mph light ; six days weekly,2736.0,0
+423,Cycling 12-13.9 mph moderate ; six days weekly,3651.0,0
+424,Cycling 14-15.9 mph vigorous ; six days weekly,4563.0,0
+425,Cycling 16-19 mph very fast racing ; six days weekly,5475.0,0
+426,Unicycling ; six days weekly,2281.5,0
+427,Stationary cycling very light ; six days weekly,1368.0,0
+428,Stationary cycling light ; six days weekly,2509.5,0
+429,Stationary cycling moderate ; six days weekly,3193.5,0
+430,Stationary cycling vigorous ; six days weekly,4791.0,0
+431,Stationary cycling very vigorous ; six days weekly,5704.5,0
+432,Aerobics low impact ; six days weekly,2281.5,2
+433,Aerobics high impact ; six days weekly,3193.5,2
+434,Aerobics step aerobics ; six days weekly,3879.0,2
+435,Aerobics general ; six days weekly,2965.5,2
+436,Jazzercise ; six days weekly,2736.0,2
+437,Stretching hatha yoga ; six days weekly,1824.0,2
+438,Mild stretching ; six days weekly,1141.5,2
+439,Instructing aerobic class ; six days weekly,2736.0,2
+440,Water aerobics ; six days weekly,1824.0,2
+441,Ballet twist jazz tap ; six days weekly,2055.0,2
+442,Ballroom dancing slow ; six days weekly,1368.0,2
+443,Ballroom dancing fast ; six days weekly,2509.5,2
+444,Teach aerobic classes (& participate) ; six days weekly,2965.5,2
+445,Orienteering ; six days weekly,4105.5,4
+446,Rock climbing ascending rock ; six days weekly,5019.0,4
+447,Rock climbing rappelling ; six days weekly,3651.0,4
+448,Backpacking Hiking with pack ; six days weekly,3193.5,4
+449,Carrying infant level ground ; six days weekly,1597.5,4
+450,Carrying infant upstairs ; six days weekly,2281.5,4
+451,Carrying 16 to 24 lbs upstairs ; six days weekly,2736.0,4
+452,Carrying 25 to 49 lbs upstairs ; six days weekly,3651.0,4
+453,Standing playing with children light ; six days weekly,1278.0,4
+454,Walk/run playing with children moderate ; six days weekly,1824.0,4
+455,Walk/run playing with children vigorous ; six days weekly,2281.5,4
+456,Carrying small children ; six days weekly,1368.0,4
+457,Loading unloading car ; six days weekly,1368.0,4
+458,Climbing hills carrying up to 9 lbs ; six days weekly,3193.5,4
+459,Climbing hills carrying 10 to 20 lb ; six days weekly,3423.0,4
+460,Climbing hills carrying 21 to 42 lb ; six days weekly,3651.0,4
+461,Climbing hills carrying over 42 lb ; six days weekly,4105.5,4
+462,Walking downstairs ; six days weekly,1368.0,4
+463,Hiking cross country ; six days weekly,2736.0,4
+464,Bird watching ; six days weekly,1141.5,4
+465,Marching rapidly military ; six days weekly,2965.5,4
+466,Pushing stroller or walking with children ; six days weekly,1141.5,4
+467,Pushing a wheelchair ; six days weekly,1824.0,4
+468,Race walking ; six days weekly,2965.5,4
+469,Rock climbing mountain climbing ; six days weekly,3651.0,4
+470,Walking using crutches ; six days weekly,2281.5,4
+471,Walking the dog ; six days weekly,1368.0,4
+472,Walk / run playing with animals ; six days weekly,1824.0,4
+473,Walking pushing a wheelchair ; six days weekly,1824.0,4
+474,Walking under 2.0 mph very slow ; every day in a week,1064.0,3
+475,Walking 2.0 mph slow ; every day in a week,1331.75,3
+476,Walking 2.5 mph ; every day in a week,1596.0,3
+477,Walking 3.0 mph moderate ; every day in a week,1757.0,3
+478,Walking 3.5 mph brisk pace ; every day in a week,2023.0,3
+479,Walking 3.5 mph uphill ; every day in a week,3192.0,3
+480,Walking 4.0 mph very brisk ; every day in a week,2661.75,3
+481,Walking 4.5 mph ; every day in a week,3353.0,3
+482,Walking 5.0 mph ; every day in a week,4259.5,3
+483,Swimming laps freestyle fast ; every day in a week,5323.5,1
+484,Swimming laps freestyle slow ; every day in a week,3725.75,1
+485,Swimming backstroke ; every day in a week,3725.75,1
+486,Swimming breaststroke ; every day in a week,5323.5,1
+487,Swimming butterfly ; every day in a week,5855.5,1
+488,Swimming leisurely not laps ; every day in a week,3192.0,1
+489,Swimming sidestroke ; every day in a week,4259.5,1
+490,Swimming synchronized ; every day in a week,4259.5,1
+491,Swimming treading water fast vigorous ; every day in a week,5323.5,1
+492,Swimming treading water moderate ; every day in a week,2128.0,1
+493,Water aerobics water calisthenics ; every day in a week,2128.0,1
+494,Water polo ; every day in a week,5323.5,1
+495,Water volleyball ; every day in a week,1596.0,1
+496,Water jogging ; every day in a week,4259.5,1
+497,Diving springboard or platform ; every day in a week,1596.0,1
+498,Cycling mountain bike bmx ; every day in a week,4525.5,0
+499,Cycling <10 mph leisure bicycling ; every day in a week,2128.0,0
+500,Cycling >20 mph racing ; every day in a week,8517.25,0
+501,Cycling 10-11.9 mph light ; every day in a week,3192.0,0
+502,Cycling 12-13.9 mph moderate ; every day in a week,4259.5,0
+503,Cycling 14-15.9 mph vigorous ; every day in a week,5323.5,0
+504,Cycling 16-19 mph very fast racing ; every day in a week,6387.5,0
+505,Unicycling ; every day in a week,2661.75,0
+506,Stationary cycling very light ; every day in a week,1596.0,0
+507,Stationary cycling light ; every day in a week,2927.75,0
+508,Stationary cycling moderate ; every day in a week,3725.75,0
+509,Stationary cycling vigorous ; every day in a week,5589.5,0
+510,Stationary cycling very vigorous ; every day in a week,6655.25,0
+511,Aerobics low impact ; every day in a week,2661.75,2
+512,Aerobics high impact ; every day in a week,3725.75,2
+513,Aerobics step aerobics ; every day in a week,4525.5,2
+514,Aerobics general ; every day in a week,3459.75,2
+515,Jazzercise ; every day in a week,3192.0,2
+516,Stretching hatha yoga ; every day in a week,2128.0,2
+517,Mild stretching ; every day in a week,1331.75,2
+518,Instructing aerobic class ; every day in a week,3192.0,2
+519,Water aerobics ; every day in a week,2128.0,2
+520,Ballet twist jazz tap ; every day in a week,2397.5,2
+521,Ballroom dancing slow ; every day in a week,1596.0,2
+522,Ballroom dancing fast ; every day in a week,2927.75,2
+523,Teach aerobic classes (& participate) ; every day in a week,3459.75,2
+524,Orienteering ; every day in a week,4789.75,4
+525,Rock climbing ascending rock ; every day in a week,5855.5,4
+526,Rock climbing rappelling ; every day in a week,4259.5,4
+527,Backpacking Hiking with pack ; every day in a week,3725.75,4
+528,Carrying infant level ground ; every day in a week,1863.75,4
+529,Carrying infant upstairs ; every day in a week,2661.75,4
+530,Carrying 16 to 24 lbs upstairs ; every day in a week,3192.0,4
+531,Carrying 25 to 49 lbs upstairs ; every day in a week,4259.5,4
+532,Standing playing with children light ; every day in a week,1491.0,4
+533,Walk/run playing with children moderate ; every day in a week,2128.0,4
+534,Walk/run playing with children vigorous ; every day in a week,2661.75,4
+535,Carrying small children ; every day in a week,1596.0,4
+536,Loading unloading car ; every day in a week,1596.0,4
+537,Climbing hills carrying up to 9 lbs ; every day in a week,3725.75,4
+538,Climbing hills carrying 10 to 20 lb ; every day in a week,3993.5,4
+539,Climbing hills carrying 21 to 42 lb ; every day in a week,4259.5,4
+540,Climbing hills carrying over 42 lb ; every day in a week,4789.75,4
+541,Walking downstairs ; every day in a week,1596.0,4
+542,Hiking cross country ; every day in a week,3192.0,4
+543,Bird watching ; every day in a week,1331.75,4
+544,Marching rapidly military ; every day in a week,3459.75,4
+545,Pushing stroller or walking with children ; every day in a week,1331.75,4
+546,Pushing a wheelchair ; every day in a week,2128.0,4
+547,Race walking ; every day in a week,3459.75,4
+548,Rock climbing mountain climbing ; every day in a week,4259.5,4
+549,Walking using crutches ; every day in a week,2661.75,4
+550,Walking the dog ; every day in a week,1596.0,4
+551,Walk / run playing with animals ; every day in a week,2128.0,4
+552,Walking pushing a wheelchair ; every day in a week,2128.0,4
