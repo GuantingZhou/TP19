@@ -88,12 +88,7 @@ insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (3,'Australi
 insert into item_option (`cost_id`,`ITEM_NAME`, `ITEM_COST`) values (3,'Australian Open Tenis multi-session ticket', 112);
 
 
-select distinct unit_price from alcohol_costs;
-
-
-
-
-
+-- select distinct unit_price from alcohol_costs;
 
 
 drop table if exists `costs`;
@@ -109,8 +104,6 @@ insert into costs (`description`,`cost_range`) values ('low costing','1 to 25 do
 insert into costs (`description`,`cost_range`) values ('moderate costing','26 to 50 dollars weekly');
 insert into costs (`description`,`cost_range`) values ('high costing','50 to 100 dollars weekly');
 insert into costs (`description`,`cost_range`) values ('very high costing', '100+ dollars weekly');
-
-
 
 
 
@@ -442,31 +435,108 @@ insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 46);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 48);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 50);
-insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 52);
-insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 54);
-insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 56);
 
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 1);
+--insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 2);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 3);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 4);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 5);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 6);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 7);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 8);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 9);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 10);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 11);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 12);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 13);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 14);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 15);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 16);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 17);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 18);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 19);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 20);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 21);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 22);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 23);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 24);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 25);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 26);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 27);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 28);
+
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 29);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 30);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 31);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 32);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 33);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 34);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 35);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 36);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 37);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 38);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 39);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 40);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 41);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 42);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 43);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 44);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 45);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 46);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 47);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 48);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 49);
+-- insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 50);
+
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 51);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 52);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 53);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 54);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 55);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 56);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 57);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 58);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 59);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 60);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 61);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 62);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 63);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 64);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 65);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 66);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 67);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 68);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 69);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 70);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 71);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 72);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 73);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 74);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 75);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 76);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 77);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 78);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 79);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 80);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 81);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 82);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 83);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 84);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 85);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 86);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 87);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 88);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 89);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 90);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 91);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 92);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 93);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 94);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 95);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 96);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 97);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 98);
+insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 99);
 insert into alcohol_costs (`type_id`,`unit_price`, `drink_amount`) values (5, 2.7, 100);
 
 
@@ -856,17 +926,10 @@ order by alcohol_costs.unit_price*alcohol_costs.drink_amount;
 -- -----------------------ITERATION-2---------------------------
 
 -- creating activity_type table
-drop table if exists `activity_type`;
 -- creating table using phpMyAdmin GUI mode by importing csv file from working directory 
--- Adding primary key constraint
-alter table `activity_type` ADD  	PRIMARY KEY ( `activity_type_id` ) ;
 
-drop table if exists `activity`;
+
 -- creating table using phpMyAdmin GUI mode by importing csv file from working directory 
--- Adding primary key constraint
-alter table `activity` ADD  	PRIMARY KEY ( `activity_id` ) ;
--- Adding foreign key constraint
-alter table `activity` ADD  FOREIGN KEY ( `activity_type_id` ) REFERENCES activity_type ( `activity_type_id` );
 
 -- Creating calorie table
 drop table if exists `calorie`;
@@ -896,8 +959,6 @@ update activity set calorie_id = 3 where activity_calorie >600 and activity_calo
 update activity set calorie_id = 4 where activity_calorie >900 and activity_calorie <=1200; 
 update activity set calorie_id = 5 where activity_calorie >1200; 
 
--- adding foreign constraint in activity table
-alter table activity ADD FOREIGN KEY ( `calorie_id` ) REFERENCES calorie ( `calorie_id` ) on delete cascade;
 
 -- Adding more columns (drink_calorie, calorie_id) in alcohol_costs table
 
@@ -908,6 +969,13 @@ update alcohol_costs set drink_calorie = 202 where type_id = 1;
 update alcohol_costs set drink_calorie = 83 where type_id = 2;
 update alcohol_costs set drink_calorie = 130 where type_id = 3;
 update alcohol_costs set drink_calorie = 650 where type_id = 4;
+update alcohol_costs set drink_calorie = 143 where type_id = 5;
+update alcohol_costs set drink_calorie = 123 where type_id = 6;
+update alcohol_costs set drink_calorie = 163 where type_id = 7;
+update alcohol_costs set drink_calorie = 166 where type_id = 8;
+update alcohol_costs set drink_calorie = 107 where type_id = 9;
+update alcohol_costs set drink_calorie = 139 where type_id = 10;
+update alcohol_costs set drink_calorie = 312 where type_id = 11;
 
 
 ALTER TABLE alcohol_costs
@@ -919,8 +987,18 @@ update alcohol_costs set calorie_id = 3 where drink_amount*drink_calorie >600 an
 update alcohol_costs set calorie_id = 4 where drink_amount*drink_calorie >900 and drink_amount*drink_calorie <=1200; 
 update alcohol_costs set calorie_id = 5 where drink_amount*drink_calorie >1200; 
 
+
+-- Adding primary key constraint for activity_type table
+alter table `activity_type` ADD  	PRIMARY KEY ( `activity_type_id` ) ;
+-- Adding primary key constraint for activity table
+alter table `activity` ADD  	PRIMARY KEY ( `activity_id` ) ;
+-- Adding foreign key constraint
+alter table `activity` ADD  FOREIGN KEY ( `activity_type_id` ) REFERENCES activity_type ( `activity_type_id` ) on delete cascade;
+-- adding foreign constraint in activity table
+alter table activity ADD FOREIGN KEY ( `calorie_id` ) REFERENCES calorie ( `calorie_id` ) on delete cascade;
 -- converting calorie_id to a foreign key
 alter table alcohol_costs ADD FOREIGN KEY ( `calorie_id` ) REFERENCES calorie ( `calorie_id` ) on delete cascade;
+
 
 
 -- Database querry
