@@ -1030,7 +1030,18 @@ and a.activity_calorie < ac.drink_amount * ac.drink_calorie
 group by ac.drink_amount,activity_type ;
 
 -- Show the all important columns in a single table
-select ac.type_id, ac.calorie_id, ac.drink_amount, ac.drink_calorie, a.activity_id, a.activity, a.activity_calorie, t.activity_type_id
-from activity a, activity_type t, calorie c, alcohol_costs ac
-where ac.calorie_id = c.calorie_id and c.calorie_id = a.calorie_id and a.activity_type_id = t.activity_type_id
+select alt.description ,  ac.drink_amount, ac.drink_calorie, 
+a.activity, a.activity_calorie, c.calorie_description , t.activity_type
+from  activity_type t, calorie c, alcohol_costs ac, activity a, alcohol_types alt
+where alt.type_id = ac.type_id and ac.calorie_id = c.calorie_id and c.calorie_id = a.calorie_id 
+and a.activity_type_id = t.activity_type_id
 order by ac.drink_amount, type_id, activity_id;
+
+select distinct alt.description as Activity , alt.percentage_alcohol * ac.drink_amount as `Alcohol Quantity`,  
+ac.drink_amount as `Drink Quantity`, 
+ac.drink_calorie as `Calorie in Alcohol`, c.calorie_description as `Calorie Level`
+from   calorie c, alcohol_costs ac, alcohol_types alt
+where alt.type_id = ac.type_id and ac.calorie_id = c.calorie_id 
+and ac.drink_amount <= 50
+order by ac.drink_amount;
+
